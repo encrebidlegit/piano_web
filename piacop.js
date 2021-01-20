@@ -11,7 +11,7 @@ document.addEventListener("keydown", function (piano) {
         let pianokey = new Audio("black_keys/" + piano.code.replace("Key", "") + ".mp3");
         pianokey.play();
         console.log("The '" + piano.code.replace("key", "") + "' key is pressed");
-    } else console.log("The '" + piano.code.replace("Key", "") + "' key is not on the piano");
-    alert("This key is not a handle")
+    } else alert("The '" + piano.code.replace("Key", "") + "' key is not on the piano");
+
 
 });
